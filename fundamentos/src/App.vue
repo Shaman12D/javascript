@@ -1,7 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <Counter title="Entraron"></Counter>
-  <Counter title="Salieron"></Counter>
+  <Counter :start="101"/>
 </template>
 
 <script>
