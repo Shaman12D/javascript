@@ -1,8 +1,10 @@
 <template>
-    <h2>{{ customTitle }} {{ start }}</h2>
+    <h2>{{ customTitle }}</h2>
     <p>{{ counter }} <sup>2</sup>={{ getSquareValue() }}</p>
+    <p data-testid="counter">{{ counter }} </p>
 
-    <div>
+
+    <div class="buttons-container">
         <button @click="increaseCounter">+1</button>
         <button @click="decreaseCounter">-1</button>
     </div>
@@ -14,7 +16,8 @@
             'title': String,
             'start': {
                 type: Number,
-                required: true,
+                default: 100,
+                // required: true,
                 validator(value){
                     return value>= 0
                 }
