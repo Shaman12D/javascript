@@ -1,11 +1,11 @@
 <template>
- <div class="options-container">
-    <ul>
-        <li v-for="pokemon in pokemons" :key="pokemon.id">
-            {{ pokemon.name }}
-        </li>
-    </ul>
- </div>
+    <div class="options-container">
+        <ul>
+            <li v-for="pokemon in pokemons" :key="pokemon.id" @click="$emit('selection', pokemon.id)">
+                {{ pokemon.name }}
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
@@ -14,6 +14,11 @@
             pokemons: {
                 type: Array,
                 required: true
+            }
+        },
+        methods: {
+            hola(){
+                // this.$emit()
             }
         }
     }
