@@ -4,9 +4,9 @@ import axios from 'axios'
 import uploadImage from '@/modules/daybook/helpers/uploadImage'
 
 cloudinary.config({
-    cloud_name: 'dx0pryfzn',
-    api_key: '422916932349318',
-    api_secret: 'gM_vs-URpSAyA3xV-PsoTg8xF3M'
+    cloud_name: 'djbohatni',
+    api_key: '732775947524588',
+    api_secret: 'Y08xb5h6sFgEXWa5mJVjGTWD0BA'
 })
 
 
@@ -14,7 +14,7 @@ describe('Pruebas en el uploadImage ', () => {
     
     test('debe de cargar un archivo y retornar el url', async( done ) => {
         
-        const { data } = await axios.get('https://res.cloudinary.com/dx0pryfzn/image/upload/v1627077252/ip3vwn8sjvnncphqka4y.jpg', {
+        const { data } = await axios.get('https://res.cloudinary.com/djbohatni/image/upload/v1691005106/qhyrdyuexoocbukfuua6.jpg', {
             responseType: 'arraybuffer'
         })
 

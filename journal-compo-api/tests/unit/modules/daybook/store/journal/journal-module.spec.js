@@ -120,7 +120,7 @@ describe('Vuex - Pruebas en el Journal Module', () => {
 
         await store.dispatch('journal/loadEntries')
 
-        expect( store.state.journal.entries.length ).toBe(2)
+        expect( store.state.journal.entries.length ).toEqual(2)
 
     })
 

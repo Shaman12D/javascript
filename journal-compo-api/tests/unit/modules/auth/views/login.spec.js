@@ -26,7 +26,6 @@ describe('Pruebas en el Login Component', () => {
 
     beforeEach(() => jest.clearAllMocks() )
 
-
     test('debe de hacer match con el snapshot', () => {
         
         const wrapper = shallowMount( Login, {
@@ -65,7 +64,7 @@ describe('Pruebas en el Login Component', () => {
         })
 
         const [ txtEmail, txtPassword ] = wrapper.findAll('input')
-        await txtEmail.setValue('fernando@gmail.com')
+        await txtEmail.setValue('test@test.com')
         await txtPassword.setValue('123456')
 
         await wrapper.find('form').trigger('submit')

@@ -30,7 +30,7 @@ describe('Pruebas en el router module del Daybook', () => {
 
         const routes = (await Promise.all( promiseRoutes )).map( r => r.default.name )
 
-        expect( routes ).toContain('EntryView')
+        expect( routes ).indexOf('EntryView')
         expect( routes ).toContain('NoEntrySelected')
 
 

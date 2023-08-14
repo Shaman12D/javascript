@@ -1,5 +1,4 @@
 import authApi from "@/api/authApi";
-import { logout } from "./mutations";
 
 export const createUser=async({commit}, user)=>{
     const { name, email, password}= user
