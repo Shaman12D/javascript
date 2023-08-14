@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import About from '@/views/About'
+import About from '@/views/AboutView.vue'
 
 describe('Pruebas en el About View', () => {
     

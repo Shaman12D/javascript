@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import Home from '@/views/HomeView'
+import Home from '@/views/HomeView.vue'
 
 describe('Pruebas en el Home View', () => {
     
