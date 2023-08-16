@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <a v-if="isExternalLink" :href="link.to" target="_blank" class="normal-link">
         {{ link.name }}
     </a>
